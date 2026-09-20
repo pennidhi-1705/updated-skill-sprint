@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root{--ink:#13221f;--muted:#66746f;--paper:#f7f8f5;--card:#fff;--line:#dfe6e1;--accent:#d9f36a;--accent2:#b8d93e;--dark:#173b34;--danger:#b94b4b;--shadow:0 18px 50px rgba(19,34,31,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.6 "DM Sans",sans-serif}a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}button{cursor:pointer}
+h1,h2,h3{font-family:"Space Grotesk",sans-serif;line-height:1.08;margin:0 0 14px}h1{font-size:clamp(42px,6vw,76px);letter-spacing:-3px}h2{font-size:clamp(30px,4vw,48px);letter-spacing:-1.8px}h3{font-size:20px}.app-shell{min-height:100vh}.navbar{height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 5vw;border-bottom:1px solid var(--line);background:rgba(247,248,245,.92);backdrop-filter:blur(12px);position:sticky;top:0;z-index:20}.brand{font:700 24px "Space Grotesk"}.brand span{color:#718b20}.navlinks{display:flex;gap:25px;color:#4e5e59;font-size:14px}.navlinks a:hover,.text-link:hover{color:#6b851d}.nav-actions{display:flex;align-items:center;gap:10px}.user-chip{font-size:12px;background:#edf1ec;border:1px solid var(--line);padding:7px 10px;border-radius:999px}.btn{border:0;border-radius:12px;padding:12px 17px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:.2s;min-height:44px}.btn:hover{transform:translateY(-1px)}.btn.primary{background:var(--dark);color:#fff}.btn.secondary{background:#fff;border:1px solid var(--line)}.btn.ghost{background:transparent;border:1px solid var(--line)}.btn.full{width:100%}
+.hero{min-height:650px;padding:95px 7vw 70px;display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center;background:linear-gradient(120deg,#f7f8f5 0%,#eef3e9 100%)}.hero-copy>p{font-size:19px;max-width:650px;color:var(--muted);margin:25px 0}.hero h1 em{font-style:normal;color:#6e8a1d}.hero-actions{display:flex;gap:12px}.hero-proof{display:flex;gap:18px;flex-wrap:wrap;margin-top:30px;color:#53615c;font-size:13px}.badge{display:inline-flex;padding:5px 9px;border-radius:999px;background:#edf1ec;color:#52615b;font-size:12px;font-weight:700}.badge.accent{background:#eaf5bd;color:#4f6517}.badge.success{background:#e0f2e7;color:#246241}.hero-visual{position:relative;min-height:430px;display:grid;place-items:center}.visual-panel{width:min(430px,90%);padding:34px;background:var(--dark);color:white;border-radius:28px;box-shadow:0 28px 60px rgba(23,59,52,.2);transform:rotate(-3deg)}.visual-panel h3{font-size:29px;margin-top:8px}.visual-panel p{color:#cbd7d2}.mini-label,.eyebrow{font-size:11px;letter-spacing:1.8px;font-weight:800;color:#71807a}.visual-panel .mini-label{color:#b6c4bf}.progress{height:10px;background:#35574f;border-radius:20px;overflow:hidden;margin:25px 0}.progress span{height:100%;display:block;background:var(--accent)}.visual-row{display:flex;justify-content:space-between;align-items:center}.floating-card{position:absolute;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);border-radius:17px;padding:14px 17px;display:flex;gap:10px;align-items:center}.floating-card small,.floating-card b{display:block}.floating-card small{color:var(--muted);font-size:11px}.floating-card.top{top:35px;right:0}.floating-card.bottom{bottom:25px;left:0}.icon,.check{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;background:#eaf5bd;font-weight:800}.section{padding:95px 8vw}.section.alt{background:#edf1ec}.section.problem{text-align:center}.section.problem .lead{max-width:700px;margin:0 auto;color:var(--muted);font-size:18px}.task-pills{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:35px}.task-pills span,.tag{border:1px solid var(--line);background:#fff;padding:8px 12px;border-radius:999px;font-size:12px}.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:45px;background:var(--line);border:1px solid var(--line)}.flow-step{background:#f7f8f5;padding:25px;min-height:130px}.flow-step span{font-size:11px;color:#87938e}.flow-step b{display:block;margin-top:22px}.split{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.split>div>p{color:var(--muted);font-size:17px;max-width:600px}.split.reverse{background:#eef2e8}.metric{font:700 62px "Space Grotesk";color:#78921f}.text-link{font-weight:800;color:#5e7814}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:25px;box-shadow:0 8px 30px rgba(19,34,31,.04)}.cta{margin:70px 8vw 90px;padding:70px;text-align:center;border-radius:28px;background:var(--dark);color:#fff}.cta p{color:#c7d3ce}.footer{border-top:1px solid var(--line);padding:45px 8vw;display:grid;grid-template-columns:1fr auto auto;gap:40px;color:var(--muted)}.footer strong{color:var(--ink);font:700 20px "Space Grotesk"}.footer a{margin:0 0 0 18px}
+.page{max-width:1180px;margin:0 auto;padding:60px 24px 100px}.page.narrow{max-width:850px}.back{display:inline-block;color:#65726d;margin-bottom:25px}.auth-card{max-width:780px;margin:30px auto}.auth-card h1{font-size:45px;letter-spacing:-2px}.auth-card>p{color:var(--muted);margin-bottom:28px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.form-grid .field:nth-child(4n),.form-grid textarea,.form-grid .form-actions,.form-grid+*{grid-column:1/-1}.field{display:flex;flex-direction:column;gap:7px;margin:0 0 17px}.field span{font-weight:700;font-size:13px}.field input,.field textarea,.field select,.filters input{width:100%;padding:12px 13px;border:1px solid #cfd9d3;border-radius:10px;background:#fff;outline:none}.field input:focus,.field textarea:focus,.field select:focus,.filters input:focus{border-color:#839e29;box-shadow:0 0 0 3px #eaf1cd}.field textarea{min-height:110px;resize:vertical}.error{margin-top:15px;padding:12px;border-radius:10px;background:#fff0f0;color:var(--danger)}.success-text{color:#2d7049}.center-note{text-align:center}.auth-links{display:flex;gap:20px;margin-top:25px;font-weight:700}.dashboard-page{max-width:1250px}.dashboard-head{margin-bottom:35px}.dashboard-head p,.market-head p{color:var(--muted)}.dashboard-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.big-number{font:700 42px "Space Grotesk";margin:15px 0}.big-number.small{font-size:28px}.section.compact{padding:55px 0 0}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:25px}.task-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.task-card h3{margin-top:15px}.task-top{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--muted)}.org-name{color:#68756f;font-size:13px}.tag-row{display:flex;flex-wrap:wrap;gap:7px;margin:15px 0}.task-meta{display:grid;grid-template-columns:1fr 1fr auto;gap:8px;padding:15px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:12px;color:#64716c}.task-meta strong{color:var(--ink)}.match-line{display:flex;justify-content:space-between;align-items:center;padding:12px 0;font-size:12px}.match-line b{color:#617d15}.market-head{padding:20px 0 30px}.market-head h1{font-size:58px}.filters{display:flex;gap:8px;margin-bottom:25px;flex-wrap:wrap}.filters input{max-width:420px}.filter{border:1px solid var(--line);background:#fff;border-radius:10px;padding:10px 14px}.filter.active{background:var(--dark);color:#fff}.detail-grid{display:grid;grid-template-columns:1fr 340px;gap:20px}.detail-copy{font-size:17px;color:#52605a;line-height:1.8}.clean-list{list-style:none;padding:0}.clean-list li{margin:10px 0}.snapshot{display:grid;grid-template-columns:1fr 1fr;gap:4px 15px;margin:20px 0}.snapshot span{color:var(--muted);font-size:12px}.snapshot b{font-size:17px;margin-top:12px}.match-score{font:700 50px "Space Grotesk"}.match-score small{font:13px "DM Sans";margin-left:7px;color:var(--muted)}hr{border:0;border-top:1px solid var(--line);margin:22px 0}.list{display:grid;gap:14px}.list-row{display:flex;justify-content:space-between;gap:20px;align-items:center}.stack,.button-row{display:flex;gap:9px;flex-wrap:wrap}.profile-header{display:flex;gap:16px;align-items:center;margin-bottom:20px}.avatar{width:58px;height:58px;border-radius:18px;display:grid;place-items:center;background:#eaf5bd;font:700 24px "Space Grotesk"}.definition{display:grid;grid-template-columns:120px 1fr;gap:10px}.definition dt{color:var(--muted)}.empty{text-align:center;padding:50px;color:var(--muted);border:1px dashed #cbd5cf;border-radius:16px}.empty div{font-size:28px}.timeline{display:flex;gap:7px;flex-wrap:wrap;margin-top:30px}.timeline span{padding:9px 12px;border-radius:999px;background:#eef1ee;color:#7a8580;font-size:12px}.timeline .done{background:#e3f0bf;color:#4d6814}.submission-preview{margin-top:20px;padding-top:15px;border-top:1px solid var(--line)}.hint{font-size:12px;color:var(--muted)}.not-found{text-align:center;padding-top:130px}.not-found h1{font-size:55px}.not-found p{color:var(--muted)}@media(max-width:900px){.navlinks{display:none}.hero,.split,.detail-grid{grid-template-columns:1fr}.hero{padding-top:65px}.hero-visual{min-height:370px}.dashboard-grid,.task-grid{grid-template-columns:1fr 1fr}.flow{grid-template-columns:1fr 1fr}.footer{grid-template-columns:1fr}.footer a{display:inline-block;margin:0 15px 0 0}}@media(max-width:620px){.navbar{padding:0 18px}.nav-actions .user-chip{display:none}.hero,.section{padding-left:22px;padding-right:22px}.hero h1{font-size:48px}.dashboard-grid,.task-grid,.form-grid,.flow{grid-template-columns:1fr}.form-grid .field:nth-child(4n),.form-grid textarea,.form-grid .form-actions{grid-column:auto}.cta{margin:35px 22px 55px;padding:45px 22px}.page{padding-left:16px;padding-right:16px}.market-head h1{font-size:45px}.list-row{align-items:flex-start;flex-direction:column}.list-row .btn{width:100%}}
+
+/* --- Verification --- */
+.notice-card{display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:#fbf7e6;border-color:#ecdfa8}
+.notice-text{color:#7a6a1a}
+.error-text{color:var(--danger)}
+.verification-section{grid-column:1/-1;border:1px dashed #cfd9d3;border-radius:14px;padding:20px;margin:6px 0 10px;background:#fbfcfa}
+.verification-copy{color:var(--muted);font-size:14px;margin:6px 0 16px}
+.checkbox-field{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:#3d4a45;margin:6px 0 12px}
+.checkbox-field input{margin-top:3px}
+.verification-row{margin-bottom:4px}
+.verification-row-head{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.verification-meta{display:flex;flex-direction:column;gap:4px;font-size:12px;color:var(--muted);text-align:right}
+.verification-docs{display:flex;flex-direction:column;gap:4px;font-size:13px;color:#3d4a45;margin:12px 0}
+.reason-input{flex:1;min-width:220px;padding:10px 12px;border:1px solid #cfd9d3;border-radius:10px}
+
+/* --- Skill Gap Radar --- */
+.skillgap-section{border-top:1px solid var(--line);margin-top:50px;padding-top:45px}
+.skillgap-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px}
+.radar-card{display:flex;flex-direction:column;align-items:center}
+.radar-svg{width:100%;max-width:340px}
+.radar-ring{fill:none;stroke:#e2e8e3;stroke-width:1}
+.radar-axis{stroke:#e2e8e3;stroke-width:1}
+.radar-current{fill:rgba(217,243,106,.45);stroke:#8ea82c;stroke-width:2}
+.radar-target{fill:rgba(23,59,52,.08);stroke:#173b34;stroke-width:1.5;stroke-dasharray:5 4}
+.radar-label{font-size:10px;fill:#5a6660;font-family:"DM Sans",sans-serif}
+.radar-legend{display:flex;gap:18px;margin-top:10px;font-size:12px;color:#4e5e59}
+.radar-legend .dot{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px}
+.radar-legend .dot.current{background:#b8d93e}
+.radar-legend .dot.target{background:#173b34}
+.gap-list{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+.gap-list li>div{display:flex;justify-content:space-between;align-items:center}
+.gap-list p{color:var(--muted);font-size:13px;margin:4px 0 0}
+.gap-tag{font-size:11px;font-weight:800;padding:4px 9px;border-radius:999px}
+.gap-high{background:#fbe3e3;color:#b0413f}
+.gap-medium{background:#fbf0d2;color:#93732a}
+.gap-low{background:#e0f2e7;color:#246241}
+.profile-flow{display:flex;align-items:stretch;gap:10px;flex-wrap:wrap}
+.profile-flow-step{flex:1;min-width:160px;background:#f7f8f5;border:1px solid var(--line);border-radius:14px;padding:16px}
+.profile-flow-step ul{margin:8px 0 0;padding-left:18px;font-size:13px;color:#4e5e59}
+.profile-flow-step.target-step{background:var(--dark);color:#fff;border-color:var(--dark)}
+.profile-flow-step.target-step ul{color:#d7e2dd}
+.profile-flow-arrow{display:flex;align-items:center;justify-content:center;font-size:20px;color:#8ea82c}
+.upgrade-card{margin-top:4px}
+.upgrade-head{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:10px}
+.roadmap{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:14px}
+.roadmap-step{background:#f7f8f5;border:1px solid var(--line);border-radius:14px;padding:16px}
+.roadmap-week{font-size:11px;letter-spacing:1.2px;font-weight:800;color:#8ea82c}
+.roadmap-step b{display:block;margin:6px 0}
+.roadmap-step p{font-size:13px;color:#4e5e59;margin:0}
+@media(max-width:900px){.skillgap-grid{grid-template-columns:1fr}.profile-flow{flex-direction:column}.profile-flow-arrow{transform:rotate(90deg)}.roadmap{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.roadmap{grid-template-columns:1fr}}
+
+/* --- SkillSprint v2: verification, network, messaging, notifications --- */
+.badge.warn{background:#fbf0d2;color:#93732a}
+.skill-editor{margin:10px 0}
+.skill-chip{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);background:#fff;padding:6px 6px 6px 13px;border-radius:999px;font-size:12px}
+.skill-chip button{border:0;background:#edf1ec;border-radius:999px;width:20px;height:20px;display:grid;place-items:center;font-size:13px;line-height:1;color:#52615b;cursor:pointer;padding:0}
+.skill-chip button:hover{background:#dfe6d6}
+.skill-add-row{display:flex;gap:8px;margin:6px 0 20px}
+.skill-add-row input{flex:1;padding:12px 13px;border:1px solid #cfd9d3;border-radius:10px;background:#fff;outline:none}
+.skill-add-row input:focus{border-color:#839e29;box-shadow:0 0 0 3px #eaf1cd}
+
+.notif-wrap{position:relative}
+.notif-bell{position:relative;background:transparent;border:1px solid var(--line);border-radius:10px;width:40px;height:40px;font-size:16px}
+.notif-dot{position:absolute;top:-6px;right:-6px;background:var(--danger);color:#fff;font-size:10px;font-weight:800;border-radius:999px;padding:2px 5px;min-width:16px;line-height:1.3}
+.notif-dropdown{position:absolute;right:0;top:48px;width:320px;max-height:420px;overflow-y:auto;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);z-index:30;padding:8px}
+.notif-dropdown-head{display:flex;justify-content:space-between;align-items:center;padding:8px 10px}
+.notif-item{padding:10px;border-radius:10px;cursor:pointer}
+.notif-item:hover{background:#f4f6f2}
+.notif-item.unread{background:#fbfcef}
+.notif-item b{display:block;font-size:13px}
+.notif-item p{margin:3px 0;font-size:12px;color:var(--muted)}
+.notif-item small{color:#96a19c;font-size:10px}
+.notif-empty{padding:20px;text-align:center;color:var(--muted);font-size:13px}
+.notif-viewall{display:block;text-align:center;padding:10px;font-weight:800;font-size:13px}
+.text-link.small{font-size:12px}
+.unread-card{border-color:#c8d98a;background:#fcfeef}
+
+.org-card h3{margin-top:12px}
+.org-meta{grid-template-columns:1fr 1fr auto}
+.detail-copy.small{font-size:14px;line-height:1.6}
+.org-profile-head{display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:center;margin-bottom:30px}
+.org-profile-head .org-snapshot{grid-column:1/-1}
+.avatar.large{width:84px;height:84px;font-size:34px}
+.avatar.small{width:38px;height:38px;font-size:15px;flex-shrink:0}
+.org-snapshot{display:flex;gap:30px}
+.org-snapshot b{font:700 26px "Space Grotesk";display:block}
+.org-snapshot span{color:var(--muted);font-size:12px}
+.button-row.center{justify-content:center}
+.radio-group{display:flex;flex-direction:column;gap:6px;margin:10px 0}
+
+.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:35px}
+.chat-preview{max-width:420px;margin-left:auto}
+.chat-preview-head{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.chat-bubble{padding:10px 14px;border-radius:14px;margin:8px 0;max-width:85%;font-size:14px}
+.chat-bubble.theirs{background:#f0f2ee;border-bottom-left-radius:4px}
+.chat-bubble.mine{background:var(--dark);color:#fff;margin-left:auto;border-bottom-right-radius:4px}
+
+.chat-shell{display:grid;grid-template-columns:280px 1fr;gap:0;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff;min-height:520px}
+.conv-list{border-right:1px solid var(--line);overflow-y:auto;max-height:640px}
+.conv-row{display:flex;gap:10px;align-items:center;padding:14px;cursor:pointer;border-bottom:1px solid var(--line)}
+.conv-row:hover,.conv-row.active{background:#f4f6f2}
+.conv-row-body b{display:block;font-size:13px}
+.conv-row-body p{margin:2px 0 0;font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:180px}
+.chat-window{display:flex;flex-direction:column;min-height:520px}
+.chat-window-head{padding:16px 20px;border-bottom:1px solid var(--line)}
+.chat-messages{flex:1;padding:20px;overflow-y:auto;display:flex;flex-direction:column}
+.chat-input-row{display:flex;gap:10px;padding:14px;border-top:1px solid var(--line)}
+.chat-input-row input{flex:1;padding:12px 14px;border:1px solid #cfd9d3;border-radius:10px}
+@media(max-width:900px){.chat-shell{grid-template-columns:1fr}.conv-list{max-height:200px}.trust-grid{grid-template-columns:1fr}.org-profile-head{grid-template-columns:1fr}}
+
+/* --- Harry AI Opportunity Assistant (additive only) --- */
+
+/* Free-roaming floating character, shown when the chat panel is closed.
+   Position (top/left) is driven inline by harryMovementController via
+   HARRY_POSITIONS; the transition duration is driven inline so it always
+   matches HARRY_WALK_DURATION exactly, whether in prod or test timing. */
+.harry-floating{position:fixed;z-index:60;width:128px;height:128px;padding:0;border:0;background:transparent;cursor:pointer;transform:translate(-50%,-50%);transition-property:top,left;transition-timing-function:ease-in-out}
+.harry-floating::before{content:"";position:absolute;left:50%;bottom:6%;width:62%;height:14%;background:radial-gradient(ellipse at center,rgba(20,30,20,.22),rgba(20,30,20,0) 70%);transform:translateX(-50%);border-radius:50%;pointer-events:none}
+.harry-floating img{width:100%;height:100%;object-fit:contain;display:block;pointer-events:none;user-select:none;filter:drop-shadow(0 10px 16px rgba(20,40,20,.25))}
+.harry-floating .harry-badge{position:absolute;top:8px;right:14px;width:14px;height:14px;border-radius:50%;background:#8ac53a;border:2px solid #fff;box-shadow:0 0 0 3px rgba(138,197,58,.25)}
+/* Character motion budget (keep it here, keep it small):
+   Harry must stay visually the same size in every state. Scale is only ever
+   used as a breathing cue, never as emphasis - the relative change between
+   any two frames stays at or under ~1%, and every cycle is slow enough to
+   read as breathing rather than as a pulse. Anything faster or larger reads
+   as Harry zooming toward the camera and pulls attention off the chat. */
+.harry-floating.harry-state-idle img{animation:harry-idle-bob 4s ease-in-out infinite}
+.harry-floating.harry-state-walking img{animation:harry-walk-bob .5s ease-in-out infinite}
+.harry-floating.harry-state-walking .harry-badge{background:#e2a53a}
+.harry-floating.harry-state-listening .harry-badge,
+.harry-floating.harry-state-thinking .harry-badge,
+.harry-floating.harry-state-talking .harry-badge{background:#3a8ae2}
+.harry-floating.harry-state-talking img{animation:harry-float-talk 2.4s ease-in-out infinite}
+.harry-floating:hover img{transform:translateY(-3px) scale(1.03);transition:transform .25s ease}
+@keyframes harry-idle-bob{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-5px) scale(1.008)}}
+@keyframes harry-walk-bob{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-4px) rotate(-2deg)}}
+@keyframes harry-float-talk{0%,100%{transform:scale(1) translateY(0)}50%{transform:scale(1.01) translateY(-1.5px)}}
+
+.harry-panel-wrap{position:fixed;right:24px;bottom:24px;z-index:60}
+.harry-panel{width:380px;max-width:90vw;height:560px;max-height:74vh;display:flex;flex-direction:column;padding:0;overflow:hidden}
+.harry-header{display:flex;align-items:center;gap:10px;padding:14px 18px;border-bottom:1px solid var(--line)}
+.harry-header b{display:block;font-family:"Space Grotesk",sans-serif}
+.harry-avatar-wrap{position:relative;width:48px;height:48px;flex:0 0 auto;border-radius:50%;background:radial-gradient(circle at 35% 30%,#eaf5bd,#d7ecae 70%);overflow:hidden}
+/* scale(1.55) is a static framing crop, not motion: it is what fits Harry's
+   head inside the 48px circle, and it is identical in every state, so his
+   resting size never changes. Every keyframe below starts and ends on this
+   exact transform, which is why moving between states never snaps. */
+.harry-avatar-wrap img{width:100%;height:100%;object-fit:contain;object-position:center 85%;display:block;transform:scale(1.55) translateY(6%);transform-origin:center 60%;transition:transform .4s ease-out;animation:harry-avatar-breathe 4.6s ease-in-out infinite}
+.harry-header.harry-state-talking .harry-avatar-wrap img{animation:harry-talk-bob 2.6s ease-in-out infinite}
+@keyframes harry-avatar-breathe{0%,100%{transform:scale(1.55) translateY(6%)}50%{transform:scale(1.558) translateY(5.7%)}}
+@keyframes harry-talk-bob{0%,100%{transform:scale(1.55) translateY(6%) rotate(0deg)}30%{transform:scale(1.559) translateY(5.6%) rotate(-.3deg)}65%{transform:scale(1.556) translateY(5.8%) rotate(.25deg)}}
+.harry-avatar-ring{position:absolute;inset:-4px;border-radius:50%;border:2px solid transparent}
+.harry-header.harry-state-listening .harry-avatar-ring{border-color:#3a8ae2;animation:harry-ring-pulse 1.6s ease-in-out infinite}
+.harry-header.harry-state-thinking .harry-avatar-ring{border-color:#e2a53a;animation:harry-ring-pulse 1.9s ease-in-out infinite}
+.harry-header.harry-state-talking .harry-avatar-ring{border-color:#8ac53a;animation:harry-ring-pulse 1.6s ease-in-out infinite}
+@keyframes harry-ring-pulse{0%,100%{opacity:.35;transform:scale(1)}50%{opacity:1;transform:scale(1.03)}}
+.harry-status-line{font-size:11px;color:var(--muted)}
+.harry-header-actions{margin-left:auto;display:flex;align-items:center;gap:6px}
+.harry-icon-btn{background:transparent;border:0;font-size:16px;line-height:1;cursor:pointer;color:var(--muted);padding:4px 6px;border-radius:8px}
+.harry-icon-btn:hover{background:#f0f2ee}
+.harry-icon-btn.active{color:#3a8ae2}
+.harry-close{background:transparent;border:0;font-size:22px;line-height:1;cursor:pointer;color:var(--muted)}
+.harry-messages{flex:1;overflow-y:auto;padding:14px 16px}
+.harry-msg{display:flex;flex-direction:column}
+.harry-msg.mine{align-items:flex-end}
+.harry-opp-list{display:flex;flex-direction:column;gap:10px;margin:6px 0 14px}
+.harry-opp-card{border:1px solid var(--line);border-radius:14px;padding:12px;background:#fbfcfa}
+.harry-opp-top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.harry-opp-score{font-size:12px;font-weight:800;color:#617d15}
+.harry-opp-org{color:var(--muted);font-size:12px;margin:2px 0 6px}
+.harry-opp-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:6px}
+.harry-opp-meta{font-size:12px;color:#64716c;margin:0 0 6px}
+.harry-opp-explain{font-size:12px;color:#4e5e59;margin:0 0 8px}
+.harry-opp-card .button-row .btn{padding:8px 12px;min-height:34px;font-size:12px}
+.harry-suggestions{display:flex;flex-wrap:wrap;gap:6px;padding:0 16px 10px}
+.harry-chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 11px;font-size:12px;cursor:pointer}
+.harry-chip:hover{background:#eaf5bd}
+.harry-input-row{display:flex;gap:8px;padding:12px 14px;border-top:1px solid var(--line)}
+.harry-input-row input{flex:1;padding:10px 12px;border:1px solid #cfd9d3;border-radius:10px;outline:none}
+.harry-input-row .btn{padding:10px 16px;min-height:40px}
+.harry-mic-btn{width:40px;height:40px;flex:0 0 auto;border-radius:10px;border:1px solid #cfd9d3;background:#fff;cursor:pointer;font-size:16px;display:grid;place-items:center}
+.harry-mic-btn.listening{background:#e9f1fb;border-color:#3a8ae2;animation:harry-mic-pulse 1s ease-in-out infinite}
+.harry-mic-btn:disabled{opacity:.4;cursor:not-allowed}
+@keyframes harry-mic-pulse{0%,100%{box-shadow:0 0 0 0 rgba(58,138,226,.4)}50%{box-shadow:0 0 0 6px rgba(58,138,226,0)}}
+.harry-voice-note{padding:0 16px 8px;font-size:11px;color:var(--muted)}
+.harry-typing{display:flex;gap:4px;align-items:center;background:#f0f2ee;border-bottom-left-radius:4px}
+.harry-typing span{width:6px;height:6px;border-radius:50%;background:#8a968f;display:inline-block;animation:harry-bounce 1s infinite ease-in-out}
+.harry-typing span:nth-child(2){animation-delay:.15s}
+.harry-typing span:nth-child(3){animation-delay:.3s}
+@keyframes harry-bounce{0%,80%,100%{transform:translateY(0);opacity:.5}40%{transform:translateY(-4px);opacity:1}}
+@media(max-width:620px){.harry-panel{width:92vw;height:80vh;max-height:80vh}.harry-panel-wrap{right:14px;bottom:14px}.harry-floating{width:84px;height:84px}}
+/* Harry holds his resting framing for anyone who asks the OS for less motion.
+   His states stay legible without animation - the status line and the ring
+   colour still say listening / thinking / speaking. */
+@media(prefers-reduced-motion:reduce){
+  .harry-floating img,.harry-avatar-wrap img,.harry-avatar-ring,.harry-mic-btn.listening{animation:none}
+  .harry-avatar-wrap img{transform:scale(1.55) translateY(6%)}
+}
