@@ -12,7 +12,7 @@ The platform features **Harry AI**, a conversational assistant designed to suppo
     <strong>🌐 Visit Live Website</strong>
   </a>
   &nbsp; | &nbsp;
-  <a href="https://github.com/pennidhi-1705/skill-sprint">
+  <a href="https://github.com/pennidhi-1705/updated-skill-sprint">
     <strong>💻 GitHub Repository</strong>
   </a>
 </p>
